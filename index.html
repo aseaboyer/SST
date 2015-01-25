@@ -50,7 +50,7 @@ ol {
 	text-align: center;
 	padding: 40px 0;
 }
-#paypal .form {
+#paypal label {
 }
 #paypal input {
 	box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
@@ -91,7 +91,7 @@ and ( min-width:1024px ) {
 	
 		<div class="form">
 			<form action="https://www.sandbox.paypal.com/webapps/adaptivepayment/flow/pay" target="PPDGFrame" class="standard">
-			<label for="buy">Donate with </label><br />
+			<label for="buy">Donate with</label><br />
 			<input type="image" id="submitBtn" value="Pay with PayPal" src="paypal.png" />
 			<input id="type" type="hidden" name="expType" value="mini">
 			<input id="paykey" type="hidden" name="paykey" value="insert_pay_key">
