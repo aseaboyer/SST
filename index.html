@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Short Story Thursdays</title>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+* {
+	font-family:'Open Sans', sans-serif;
+}
+body, html {
+	background-color:rgba( 231, 216, 183, 1 );
+	margin:0;
+	padding:0;
+}
+
+#header {
+	box-shadow:0 1px 1px rgba( 0, 0, 0, 0.4 );
+	display:block;
+	margin:0
+	transition:box-shadow 700ms, margin 700ms, width 700ms;
+	width:100%;
+}
+#main {
+	background-color:#fff;
+	padding:60px 0;
+	transition:width 700ms;
+	width:100%;
+}
+#main>* {
+	padding:0 30px;
+}
+h2 {
+	color:#333;
+	font-size:1.4em;
+	font-weight:700;
+	margin:0;
+}
+p {
+	color:#333;
+}
+ol {
+	margin-left:20px;
+}
+#paypal {
+	display: block;
+	font-size:1.3em;
+	margin:0 auto;
+	text-align: center;
+	padding: 40px 0;
+}
+#paypal .form {
+}
+#paypal input {
+	box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
+	transition:width 700ms;
+	width:300px
+}
+
+@media only screen 
+and ( min-width:1024px ) {
+	#header {
+		box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
+		margin:0 auto;
+		width:1024px
+	}
+	#main {
+		margin:0 auto;
+		padding:60px 80px;
+		width:42em;
+	}
+	#main>* {
+		padding-right:0;
+		padding-left:0;
+	}
+	#paypal input {
+		box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
+		width:200px
+	}
+}
+</style>
+<body>
+<img src="logo.png" alt="Short Story Thursdays - One email a week. One story a week. All classics. No garbage." id="header" />
+<div id="main">
+	<h2>Look, thank you. That you even made it to this page, thank you.</h2>
+
+	<p>I have been running this organization, all alone, for more than four years straight, no break in service. Besides the huge, fat chunks of extremely real time I have invested, sifting through endless stories from the public domain, formatting them, introducing them, signing up new members, there are very real monetary responsibilities, all of which I have been covering personally, somewhat happily, until now, because I cannot afford them anymore and, honestly, I want to grow. I want to make this little organization the greatest it can possibly be; let its little heart beat so hard that people want to squeeze it and hug it and kiss it on its face because it's theirs and they love it too.</p>
+	
+	<div id="paypal">
+	
+		<div class="form">
+			<form action="https://www.sandbox.paypal.com/webapps/adaptivepayment/flow/pay" target="PPDGFrame" class="standard">
+			<label for="buy">Donate with </label><br />
+			<input type="image" id="submitBtn" value="Pay with PayPal" src="paypal.png" />
+			<input id="type" type="hidden" name="expType" value="mini">
+			<input id="paykey" type="hidden" name="paykey" value="insert_pay_key">
+			</form>
+			<script type="text/javascript" charset="utf-8">
+			var dgFlowMini = new PAYPAL.apps.DGFlowMini({trigger: 'submitBtn'});
+			</script>
+		</div>
+	</div>
+
+	<h2>A few facts, if you are considering donating:</h2>
+	
+	<ol>
+		<li>We are a governmentally-recognized non-profit. That means anything you give is a charitable donation and is fully tax deductible.</li>
+
+		<li>You do not need a PayPal account to donate. Though clicking below will bring you to PayPal's secure server, you'll only need to enter your payment information, choose your donation amount, and receive an electronic receipt for your charitable donation. Nothing more will be asked of you. PayPal is a trusted source and they have a special program for non-profits, making it easier for us, right now.</li>
+		  
+		<li>Each and every donor will be listed on a special page in each and every PDF and word doc, each and every week. Unless you wish to remain anonymous. And I have the cutest name for the donor page, believe me.</li>
+		  
+		<li>This money will not only go toward paying for the costs associated with running SST, but, mostly, excitingly, growing SST. I have a whole garbage dump of incredible plans, believe me. Like audio versions of each dispatch and story. Things are going to get way better, fast.</li>
+		  
+		<li>I will love you forever. If you do this, I will love you forever.</li> 
+	</ol>
+	
+	<p>So please, if you feel it in your bones, if you want to support the arts and help me do what I do every single week, donate. SST is worth it. It means so much to so many. Help me make it perfect and amazing.</p>
+
+	<p class="signiture">Sincerely,<br />
+	Jacob Tomsky</p>
+	
+	<!--
+	<div id="social">
+		<div id="facebook"><a href="#" target="_blank">Our generous collection of Facebooks</a></div>
+		<div id="twitter"><a href="#" target="_blank">Our benevolent collection of tweets</a></div>
+		<div id="site"><a href="www.jacobtomsky.com" target="_blank">www.jacobtomsky.com</a></div>
+	</div>
+	-->
+</div>
+</body>
+</html>
