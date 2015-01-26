@@ -16,6 +16,7 @@ body, html {
 }
 
 #header {
+	background-color:#fffbe1;
 	box-shadow:0 1px 1px rgba( 0, 0, 0, 0.4 );
 	display:block;
 	margin:0
@@ -51,11 +52,11 @@ ol {
 	padding: 40px 0;
 }
 #paypal label {
+	border:1px solid #333;
+	border-radius:10px;
 }
-#paypal input {
-	box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
-	transition:width 700ms;
-	width:300px
+#withPayPal {
+	vertical-align:top;
 }
 
 @media only screen 
@@ -74,10 +75,12 @@ and ( min-width:1024px ) {
 		padding-right:0;
 		padding-left:0;
 	}
+	/*
 	#paypal input {
 		box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
 		width:200px
 	}
+	*/
 }
 </style>
 <body>
@@ -87,19 +90,16 @@ and ( min-width:1024px ) {
 
 	<p>i have been running this organization, all alone, for more than four years straight, no break in service. Besides the huge, fat chunks of extremely real time i have invested, sifting through endless stories from the public domain, formatting them, introducing them, signing up new members, there are very real monetary responsibilities, all of which i have been covering personally, somewhat happily, until now, because i cannot afford them anymore and, honestly, i want to grow. i want to make this little organization the greatest it can possibly be; let its little heart beat so hard that people want to squeeze it and hug it and kiss it on its face because it's theirs and they love it too.</p>
 	
-	<div id="paypal">
-	
-		<div class="form">
-			<form action="https://www.sandbox.paypal.com/webapps/adaptivepayment/flow/pay" target="PPDGFrame" class="standard">
-			<label for="buy">Donate with</label><br />
-			<input type="image" id="submitBtn" value="Pay with PayPal" src="paypal.png" />
+	<div class="form" id="paypal">
+		<form action="https://www.sandbox.paypal.com/webapps/adaptivepayment/flow/pay" target="PPDGFrame" class="standard">
+			<input type="image" id="submitBtn" value="Pay with PayPal" src="btn_donate_LG.gif" />
+			<p id="withPayPal">with <img src="paypal_sm.png" /></p>
 			<input id="type" type="hidden" name="expType" value="mini">
 			<input id="paykey" type="hidden" name="paykey" value="insert_pay_key">
-			</form>
-			<script type="text/javascript" charset="utf-8">
-			var dgFlowMini = new PAYPAL.apps.DGFlowMini({trigger: 'submitBtn'});
-			</script>
-		</div>
+		</form>
+		<script type="text/javascript" charset="utf-8">
+		var dgFlowMini = new PAYPAL.apps.DGFlowMini({trigger: 'submitBtn'});
+		</script>
 	</div>
 
 	<h2>A few facts, if you are considering donating:</h2>
