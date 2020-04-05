@@ -1,0 +1,147 @@
+html {
+    font-family: 'Baloo Thambi 2', sans-serif;
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+body {
+    margin:0;
+    padding:0;
+}
+
+header img {
+    max-width:100%;
+}
+
+#body-wrapper {
+    margin:0 auto;
+    max-width:36em;
+    padding:0 1em 1em;
+}
+
+h1 {
+    font-size:2.2rem;
+    font-weight:700;
+    margin-top:0;
+}
+
+p {
+    margin-bottom:0;
+}
+
+ul {
+    margin-top:0;
+}
+
+label {
+    display:block;
+    font-size:1.2rem;
+}
+
+input.email {
+    border:2px solid gray;
+    border-radius: 2px;
+    font-family: 'Roboto Slab', serif;
+    font-size:1.2rem;
+    font-weight:400;
+    padding:0.25em;
+}
+
+input.button {
+    border:2px solid gray;
+    border-radius: 2px;
+    font-size:1.2rem;
+    padding:0.25em;
+}
+
+#subscribe-success {
+    display:none;
+    opacity:0;
+    transition:max-height 230ms,
+        opacity 230ms;
+}
+#subscribe-success.show {
+    display:block;
+    max-height:600px;
+    opacity:1;
+}
+#subscribe-success p.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding:.5em;
+    margin:0;
+}
+
+#subscribe-result {
+    border-radius:5px;
+    border:0 solid transparent;
+    display:none;
+    opacity:0;
+    transition:border-color 230ms,
+        border-width 230ms,
+        max-height 230ms,
+        opacity 230ms;
+}
+#subscribe-result[data-result="error"] {
+    background-color: #f8d7da;
+    border:2px solid #f5c6cb;
+    color:#721c24;
+    display:block;
+    margin-top:1rem;
+    max-height:600px;
+    opacity:1;
+}
+
+#subscribe-result p {
+    margin:.5em;
+}
+#subscribe-result a {
+    color:black;
+}
+
+footer {
+    margin-top:10rem;
+    text-align:center;
+}
+
+footer .connect {
+    border-bottom:2px solid black;
+}
+
+footer .connect p {
+    background-color:black;
+    color:white;
+    font-size:1.6rem;
+    font-weight:700;
+    width:100%;
+}
+
+footer .connect .icons {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin:2rem 0;
+}
+footer .connect .icons a {
+    display:block;
+    max-width:50px;
+    width:25%;
+}
+footer .connect .icons a svg {
+    display:block;
+    fill:gray;
+    height:auto;
+    width:100%;
+}
+
+footer .connect .icons a:hover {
+    display:block;
+    height:auto;
+    width:100%;
+}
+footer .connect .icons a:hover svg {
+    display:block;
+    height:auto;
+    width:100%;
+}

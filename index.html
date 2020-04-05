@@ -1,133 +1,163 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Short Story Thursdays</title>
+  <meta charset="utf-8">
+
+  <title>Short Story Thursdays</title>
+  <meta name="description" content="Short Story Thursdays">
+  <meta name="author" content="Andy Seaboyer">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
 </head>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<style>
-* {
-	font-family:'Open Sans', sans-serif;
-}
-body, html {
-	background-color:rgba( 231, 216, 183, 1 );
-	margin:0;
-	padding:0;
-}
 
-#header {
-	box-shadow:0 1px 1px rgba( 0, 0, 0, 0.4 );
-	display:block;
-	margin:0
-	transition:box-shadow 700ms, margin 700ms, width 700ms;
-	width:100%;
-}
-#main {
-	background-color:#fff;
-	padding:60px 0;
-	transition:width 700ms;
-	width:100%;
-}
-#main>* {
-	padding:0 30px;
-}
-h2 {
-	color:#333;
-	font-size:1.4em;
-	font-weight:700;
-	margin:0;
-}
-p {
-	color:#333;
-}
-ol {
-	margin-left:20px;
-}
-#paypal {
-	display: block;
-	font-size:1.3em;
-	margin:0 auto;
-	text-align: center;
-	padding: 40px 0;
-}
-#paypal .form {
-}
-#paypal input {
-	box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
-	transition:width 700ms;
-	width:300px
-}
-
-@media only screen 
-and ( min-width:1024px ) {
-	#header {
-		box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
-		margin:0 auto;
-		width:1024px
-	}
-	#main {
-		margin:0 auto;
-		padding:60px 80px;
-		width:42em;
-	}
-	#main>* {
-		padding-right:0;
-		padding-left:0;
-	}
-	#paypal input {
-		box-shadow:0 5px 5px rgba( 0, 0, 0, 0.4 );
-		width:200px
-	}
-}
-</style>
 <body>
-<img src="logo.png" alt="Short Story Thursdays - One email a week. One story a week. All classics. No garbage." id="header" />
-<div id="main">
-	<h2>Look, thank you. That you even made it to this page, thank you.</h2>
+    <div id="body-wrapper">
+        <header>
+            <img src="./logo.webp">
+            <h1>Sign up for SST</h1>
+        </header>
+        
+        <main>
+            <!-- https://github.com/rydama/mailchimp-ajax-signup/blob/master/ajax-subscribe.html-->
+            
+            <div id="mc_embed_signup">
+                <form action="https://shortstorythursdays.us19.list-manage.com/subscribe/post-json?u=8fac3e037896f0b79d09a0c16&amp;id=de1a81b52e" method="post" id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <label id="substyle" for="mce-EMAIL">Email</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your e-mail" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8fac3e037896f0b79d09a0c16_de1a81b52e" tabindex="-1" value=""></div>
+                        <br><br>
+                    <div class="clear"><input type="submit" value="Submit" name="subscribe" id="subscribe" class="button"></div>
+                    </div>
 
-	<p>I have been running this organization, all alone, for more than four years straight, no break in service. Besides the huge, fat chunks of extremely real time I have invested, sifting through endless stories from the public domain, formatting them, introducing them, signing up new members, there are very real monetary responsibilities, all of which I have been covering personally, somewhat happily, until now, because I cannot afford them anymore and, honestly, I want to grow. I want to make this little organization the greatest it can possibly be; let its little heart beat so hard that people want to squeeze it and hug it and kiss it on its face because it's theirs and they love it too.</p>
-	
-	<div id="paypal">
-	
-		<div class="form">
-			<form action="https://www.sandbox.paypal.com/webapps/adaptivepayment/flow/pay" target="PPDGFrame" class="standard">
-			<label for="buy">Donate with </label><br />
-			<input type="image" id="submitBtn" value="Pay with PayPal" src="paypal.png" />
-			<input id="type" type="hidden" name="expType" value="mini">
-			<input id="paykey" type="hidden" name="paykey" value="insert_pay_key">
-			</form>
-			<script type="text/javascript" charset="utf-8">
-			var dgFlowMini = new PAYPAL.apps.DGFlowMini({trigger: 'submitBtn'});
-			</script>
-		</div>
-	</div>
+                    <div id="subscribe-result">
+                    </div>
+                </form>
+            </div>
 
-	<h2>A few facts, if you are considering donating:</h2>
-	
-	<ol>
-		<li>We are a governmentally-recognized non-profit. That means anything you give is a charitable donation and is fully tax deductible.</li>
+            <div id="subscribe-success">
+                <p class="success"><strong>Thank you for subscribing</strong></p>
+                <p>A few quick notes:</p>
+                <ul>
+                    <li>Introduction letter should hit your inbox within a minute, telling you everything you need to know about the community you've just joined.</li>
+                    <li>If it doesn't appear within a minute, check your junk mail.</li>
+                    <li>We are not junk.</li>
+                    <li>Time to read; don't fuck this up.</li>
+                </ul>
+            </div>
 
-		<li>You do not need a PayPal account to donate. Though clicking below will bring you to PayPal's secure server, you'll only need to enter your payment information, choose your donation amount, and receive an electronic receipt for your charitable donation. Nothing more will be asked of you. PayPal is a trusted source and they have a special program for non-profits, making it easier for us, right now.</li>
-		  
-		<li>Each and every donor will be listed on a special page in each and every PDF and word doc, each and every week. Unless you wish to remain anonymous. And I have the cutest name for the donor page, believe me.</li>
-		  
-		<li>This money will not only go toward paying for the costs associated with running SST, but, mostly, excitingly, growing SST. I have a whole garbage dump of incredible plans, believe me. Like audio versions of each dispatch and story. Things are going to get way better, fast.</li>
-		  
-		<li>I will love you forever. If you do this, I will love you forever.</li> 
-	</ol>
-	
-	<p>So please, if you feel it in your bones, if you want to support the arts and help me do what I do every single week, donate. SST is worth it. It means so much to so many. Help me make it perfect and amazing.</p>
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript">
+                function setResult (msg, type) {
+                    let resultElement = document.getElementById ("subscribe-result");
+                    resultElement.dataset.result = type;
 
-	<p class="signiture">Sincerely,<br />
-	Jacob Tomsky</p>
-	
-	<!--
-	<div id="social">
-		<div id="facebook"><a href="#" target="_blank">Our generous collection of Facebooks</a></div>
-		<div id="twitter"><a href="#" target="_blank">Our benevolent collection of tweets</a></div>
-		<div id="site"><a href="www.jacobtomsky.com" target="_blank">www.jacobtomsky.com</a></div>
-	</div>
-	-->
-</div>
+                    if (type === "success") {
+                        jQuery ("#subscribe-success").addClass ("show").show ();
+                        jQuery ("#mc_embed_signup").hide ();
+
+                    } else {
+                        resultElement.innerHTML = "<p>" + msg + "</p>";
+
+                        let links = resultElement.getElementsByTagName ("a");
+                        for (let i = 0; i < links.length; i++) {
+                            links [i].setAttribute ("target", "mailchimp")
+                        }
+                    }
+                }
+
+
+                $(document).ready(function(){
+                    ajaxMailChimpForm($("#subscribe-form"));
+
+                    // Turn the given MailChimp form into an ajax version of it
+                    function ajaxMailChimpForm($form){
+
+                        // Submit the form manually.
+                        $form.submit(function(e) {
+                            e.preventDefault();
+
+                            if (!isValidEmail($form)) {
+                                setResult ("A valid email address must be provided.", "error");
+                            } else {
+                                setResult ("Subscribing...", "waiting");
+
+                                submitSubscribeForm($form);
+                            }
+                        });
+                    }
+
+                    // Validate the email address in the form
+                    function isValidEmail($form) {
+                        // If email is empty, show error message.
+                        // contains just one @
+                        var email = $form.find("input[type='email']").val();
+                        if (!email || !email.length) {
+                            return false;
+                        } else if (email.indexOf("@") == -1) {
+                            return false;
+                        }
+
+                        return true;
+                    }
+
+                    // Submit the form with an ajax/jsonp request.
+                    // Based on http://stackoverflow.com/a/15120409/215821
+                    function submitSubscribeForm($form) {
+                        $.ajax({
+                            type: "GET",
+                            url: $form.attr("action"),
+                            data: $form.serialize(),
+                            cache: false,
+                            dataType: "jsonp",
+                            jsonp: "c", // trigger MailChimp to return a JSONP response
+                            contentType: "application/json; charset=utf-8",
+
+                            error: function(error){
+                                // According to jquery docs, this is never called for cross-domain JSONP requests
+                            },
+
+                            success: function(data){
+                                console.log (data);
+
+                                setResult (data.msg, data.result);
+                            }
+                        });
+                    }
+
+                });
+
+            </script>
+
+            <!--End mc_embed_signup-->
+        </main>
+    
+        <footer>
+            <div class="connect">
+                <p>Connect with us if you give a shit</p>
+                <div class="icons">
+                    <a href="https://twitter.com/sstexecutives" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" role="img" data-ux="Icon" aria-labelledby="twitter-icon-title">
+                            <title id="twitter-icon-title">SST on Twitter</title>
+                            <path fill-rule="evenodd" d="M21 6.662a7.655 7.655 0 0 1-2.124.547 3.555 3.555 0 0 0 1.621-1.946 7.46 7.46 0 0 1-2.34.853A3.758 3.758 0 0 0 15.46 5c-2.045 0-3.69 1.586-3.69 3.533 0 .273.035.547.092.81-3.061-.154-5.79-1.554-7.607-3.698a3.394 3.394 0 0 0-.502 1.783c0 1.225.65 2.308 1.644 2.942a3.84 3.84 0 0 1-1.667-.448v.044c0 1.717 1.268 3.139 2.958 3.467-.308.076-.64.12-.97.12a4.85 4.85 0 0 1-.697-.055c.468 1.4 1.827 2.418 3.449 2.45a7.598 7.598 0 0 1-4.58 1.51c-.309 0-.594-.011-.891-.044A10.762 10.762 0 0 0 8.665 19c6.784 0 10.496-5.381 10.496-10.052 0-.153 0-.306-.011-.459A7.757 7.757 0 0 0 21 6.662z"></path>
+                        </svg>
+                    </a>
+    
+                    <a href="https://www.instagram.com/shortstorythursdays/" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" role="img" data-ux="Icon" aria-labelledby="instagram-icon-title">
+                            <title id="instagram-icon-title">SST on Instagram</title>
+                            <path d="M14.667 12a2.57 2.57 0 0 0-.782-1.885A2.57 2.57 0 0 0 12 9.333a2.57 2.57 0 0 0-1.885.782A2.57 2.57 0 0 0 9.333 12c0 .736.26 1.365.782 1.885.52.521 1.149.782 1.885.782a2.57 2.57 0 0 0 1.885-.782c.521-.52.782-1.149.782-1.885zm1.437 0c0 1.139-.4 2.108-1.198 2.906-.798.799-1.767 1.198-2.906 1.198-1.139 0-2.108-.4-2.906-1.198-.799-.798-1.198-1.767-1.198-2.906 0-1.139.4-2.108 1.198-2.906.798-.799 1.767-1.198 2.906-1.198 1.139 0 2.108.4 2.906 1.198.799.798 1.198 1.767 1.198 2.906zm1.125-4.27c0 .263-.094.489-.281.676a.923.923 0 0 1-.677.282.923.923 0 0 1-.677-.282.923.923 0 0 1-.281-.677c0-.264.093-.49.28-.677a.923.923 0 0 1 .678-.281c.264 0 .49.094.677.281a.923.923 0 0 1 .281.677zM12 5.437l-.797-.006a56.514 56.514 0 0 0-1.099 0c-.25.004-.585.014-1.005.032-.42.017-.778.052-1.073.104a4.177 4.177 0 0 0-.745.192c-.347.14-.653.34-.916.605-.264.263-.466.569-.605.916-.076.202-.14.45-.192.745a8.255 8.255 0 0 0-.104 1.073c-.018.42-.028.755-.032 1.005-.003.25-.003.616 0 1.1l.006.796-.006.797c-.003.483-.003.849 0 1.099.004.25.014.585.032 1.005.017.42.052.778.104 1.073.052.295.116.543.192.745.14.347.34.653.605.916.263.264.569.466.916.605.202.076.45.14.745.192.295.052.653.087 1.073.104.42.018.755.028 1.005.032.25.003.616.003 1.1 0l.796-.005.797.005c.483.003.849.003 1.099 0 .25-.004.585-.014 1.005-.032.42-.017.778-.052 1.073-.104.295-.052.543-.116.745-.192.347-.14.653-.34.916-.605.264-.263.466-.569.605-.916.076-.202.14-.45.192-.745.052-.295.087-.653.104-1.073.018-.42.028-.755.032-1.005.003-.25.003-.616 0-1.1L18.562 12l.006-.797c.003-.483.003-.849 0-1.099a38.59 38.59 0 0 0-.032-1.005 8.255 8.255 0 0 0-.104-1.073 4.177 4.177 0 0 0-.192-.745 2.703 2.703 0 0 0-.605-.916 2.703 2.703 0 0 0-.916-.605 4.177 4.177 0 0 0-.745-.192 8.255 8.255 0 0 0-1.073-.104c-.42-.018-.755-.028-1.005-.032-.25-.003-.616-.003-1.1 0L12 5.438zM20 12c0 1.59-.017 2.691-.052 3.302-.07 1.445-.5 2.563-1.292 3.354-.791.792-1.91 1.222-3.354 1.292-.611.035-1.712.052-3.302.052s-2.691-.017-3.302-.052c-1.445-.07-2.563-.5-3.354-1.292-.792-.791-1.222-1.91-1.292-3.354C4.017 14.691 4 13.59 4 12s.017-2.691.052-3.302c.07-1.445.5-2.563 1.292-3.354.791-.792 1.91-1.222 3.354-1.292C9.309 4.017 10.41 4 12 4s2.691.017 3.302.052c1.445.07 2.563.5 3.354 1.292.792.791 1.222 1.91 1.292 3.354.035.611.052 1.712.052 3.302z"></path>
+                        </svg>
+
+                    </a>
+                </div>
+            </div> 
+            <p id="copyright">Copyright © 2020 Short Story Thursdays - All Rights Reserved.</p> 
+        </footer>
+    </div>
 </body>
 </html>
